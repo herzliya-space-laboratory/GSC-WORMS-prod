@@ -1,0 +1,21 @@
+{
+  "name": "GSC-WORMS",
+  "version": "1.0.0",
+  "main": "./src/electron.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public",
+    "electron": "run-s build pure-electron",
+    "pure-electron": "electron .",
+    "electron-dev": "run-p dev pure-electron-dev",
+    "pure-electron-dev": "NODE_ENV=development electron ."
+  },
+  "dependencies": {
+    "dayjs": "^1.8.28",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "uuid": "^7.0.3",
+    "xml2js": "^0.4.23",
+    "electron": "^8.2.0"
+  }
+}
