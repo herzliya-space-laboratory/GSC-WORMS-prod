@@ -22002,7 +22002,7 @@ var app = (function () {
   	return child_ctx;
   }
 
-  // (30:2) {#each [...units] as unit (unit)}
+  // (31:2) {#each [...units] as unit (unit)}
   function create_each_block$9(key_1, ctx) {
   	let li;
   	let t0_value = /*unit*/ ctx[4] + "";
@@ -22029,13 +22029,13 @@ var app = (function () {
   			i.textContent = "delete";
   			t3 = space();
   			attr_dev(i, "class", "material-icons");
-  			add_location(i, file$i, 33, 8, 670);
+  			add_location(i, file$i, 34, 8, 689);
   			attr_dev(a, "href", "#!");
   			attr_dev(a, "class", "waves-effect waves-red btn-flat");
-  			add_location(a, file$i, 32, 6, 608);
+  			add_location(a, file$i, 33, 6, 627);
   			attr_dev(li, "href", "#!");
   			attr_dev(li, "class", "collection-item");
-  			add_location(li, file$i, 30, 4, 550);
+  			add_location(li, file$i, 31, 4, 569);
   			this.first = li;
   		},
   		m: function mount(target, anchor, remount) {
@@ -22062,7 +22062,7 @@ var app = (function () {
   		block,
   		id: create_each_block$9.name,
   		type: "each",
-  		source: "(30:2) {#each [...units] as unit (unit)}",
+  		source: "(31:2) {#each [...units] as unit (unit)}",
   		ctx
   	});
 
@@ -22110,14 +22110,14 @@ var app = (function () {
   			}
 
   			attr_dev(div0, "class", "col l2 m2 s2");
-  			add_location(div0, file$i, 21, 2, 319);
-  			add_location(h5, file$i, 25, 4, 455);
+  			add_location(div0, file$i, 22, 2, 338);
+  			add_location(h5, file$i, 26, 4, 474);
   			attr_dev(div1, "class", "col l2 m2 s2 offset-l2 offset-m2 offset-s2");
-  			add_location(div1, file$i, 24, 2, 394);
+  			add_location(div1, file$i, 25, 2, 413);
   			attr_dev(div2, "class", "row");
-  			add_location(div2, file$i, 20, 0, 299);
+  			add_location(div2, file$i, 21, 0, 318);
   			attr_dev(ul, "class", "collection svelte-i7cuax");
-  			add_location(ul, file$i, 28, 0, 486);
+  			add_location(ul, file$i, 29, 0, 505);
   		},
   		l: function claim(nodes) {
   			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -22187,6 +22187,7 @@ var app = (function () {
 
   	const deleteUnit = unit => {
   		units.delete(unit);
+  		$$invalidate(0, units);
   	};
 
   	const writable_props = ["units"];
