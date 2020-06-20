@@ -1,1 +1,1 @@
-npm run pure-electron
+npm run start
