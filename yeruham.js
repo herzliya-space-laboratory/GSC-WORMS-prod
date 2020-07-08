@@ -75,6 +75,7 @@ function convertType(type) {
 			return "byte";
 		case "int":
 			return "int32";
+		case "short int?":
 		case "short":
 			return "int16";
 		case "date":
@@ -82,6 +83,10 @@ function convertType(type) {
 			return "datetime";
 		case "float":
 			return "float";
+		case "ascii":
+			return "string";
+		case "bytes":
+			return "int32";
 		default:
 			return type;
 	}
