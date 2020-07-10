@@ -53,6 +53,7 @@ function convertParam(param, part) {
 		Object.getOwnPropertyDescriptor(param, "desc")
 	);
 	delete param["desc"];
+	if (param.type === "ascii") param.size = 100;
 	param.type = convertType(param.type);
 	param.isLittleEndian = true;
 
